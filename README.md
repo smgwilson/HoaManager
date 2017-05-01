@@ -1,28 +1,22 @@
-== README
+# HOA Management Application for Kings Court Condominiums
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Key requirements:
+	1. Track the association between units, owners(members), and tenants
+	2. Track units and parking spaces
+	3. Track service organizations and personnel
 
-Things you may want to cover:
+## Models
+- User -> first_name:string, last_name:string, email:string, phone:string, occupant?:boolean, admin?:boolean, current?:boolean, unit_id:integer, Devise -> Owner, Tenant, Management
+- Unit -> bedrooms: number, parking_space: number, fee:number
 
-* Ruby version
+## STI
+1. All owners can log in
+2. No tenants can log in
+3. Some owners are occupants
+4. All tenants are occupants
+5. Some owners are Admins (on the Board)
+6. All management are Admins
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+## Features
+- Allow owners to log in, update contact information, and subscribe to e-mails and texts
+- Allow owners to view public board minutes
