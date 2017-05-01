@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bedrooms: 1
+  parking_space: 1
+  fee: 9.99
+
+two:
+  bedrooms: 1
+  parking_space: 1
+  fee: 9.99
